@@ -1,0 +1,22 @@
+[project]
+name = "first"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MiKaMoRe", email = "kim.roman-2002@yandex.ru" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "ollama>=0.6.2",
+    "python-multipart>=0.0.32",
+    "uvicorn>=0.53.0",
+]
+
+[project.scripts]
+first = "first:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
