@@ -7,12 +7,6 @@ from fastapi import HTTPException
 
 import config
 
-# import obsidian
-
-# MODEL = "qwen3:8b"
-# "qwen3-abliterated:8b"
-# VISION_MODEL = "qwen3.5"  # модель с поддержкой vision
-
 
 def run_text_agent(category: str, task: str, history: list[dict]) -> str:
     """Одиночный вызов текстового агента (code / research / creative / general)."""
